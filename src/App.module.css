@@ -1,0 +1,4 @@
+.app {
+  padding: 0 3.2rem;
+  border-top: 7px solid var(--color-primary);
+}

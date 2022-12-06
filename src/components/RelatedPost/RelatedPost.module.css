@@ -1,0 +1,21 @@
+.relatedPostWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.relatedImg {
+  height: 7.2rem;
+  width: 7.2rem;
+  border-radius: 5px;
+}
+
+.relatedPostTitle {
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-primary);
+}
+
+.relatedPostDate {
+  font-size: 1.4rem;
+}
