@@ -8,33 +8,8 @@ import RelatedPost from '../RelatedPost/RelatedPost';
 import PostsPagination from "../PostsPagination/PostsPagination";
 import Footer from "../Footer/Footer";
 
-import { postsContent, relatedPosts, randomNumFrom } from "../../postsContent.js";
 
-
-const randomRelatedPosts = function() {
-
-  const temp = [];
-
-  while (temp.length < 3) {
-
-    const randomPost = relatedPosts
-      .at(randomNumFrom(relatedPosts))
-    ;
-
-    const postIsRepeated = 
-      [...temp].some(post => randomPost === post)
-    ;
-
-    if (postIsRepeated) continue;
-    if (!postIsRepeated) temp.push(randomPost);
-
-  };
-
-  return temp;
-
-};
-
-
+import { postsContent, randomRelatedPosts } from "../../postsContent.js";
 
 
 function MainModule() {
@@ -54,7 +29,7 @@ function MainModule() {
   };
 
 
-  // Assim não teremos line depois do penúltimo post.
+  // Assim não teremos line depois do último post.
   let penultimatePost;
 
   if (postsContent.at(currentPostsPosition).length === 3) {

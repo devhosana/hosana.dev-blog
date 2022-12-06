@@ -37,6 +37,12 @@ const keyGen = function() {
 };
 
 
+const randomNumFrom = function(array) {
+  const maximum = array.length;
+  const num = Math.trunc((Math.random() * maximum) + 1);
+  return num - 1;
+};
+
 
 export const postsContent = [
 
@@ -467,7 +473,7 @@ export const postsContent = [
 ];
 
 
-export const relatedPosts = postsContent
+const relatedPosts = postsContent
   .flat()
   .map(postContent => {
     return {
@@ -479,15 +485,34 @@ export const relatedPosts = postsContent
   })
 ;
 
-export const randomNumFrom = function(array) {
-  const maximum = array.length;
-  const num = Math.trunc((Math.random() * maximum) + 1);
-  return num - 1;
+export const randomRelatedPosts = function() {
+
+  const randomRelatedPosts = [];
+
+  while (randomRelatedPosts.length < 3) {
+
+    const randomPost = relatedPosts
+      .at(randomNumFrom(relatedPosts))
+    ;
+
+    const postIsRepeated = 
+      [...randomRelatedPosts].some(post => randomPost === post)
+    ;
+
+    if (postIsRepeated) continue;
+    if (!postIsRepeated) randomRelatedPosts.push(randomPost);
+
+  };
+
+  return randomRelatedPosts;
+
 };
+
+
 
 // For some reason this is not working, I'll check later
 /*
-const relatedPostsDummy = postsContent
+const relatedPosts = postsContent
   .flatMap(postContent => {
     return {
       title: postContent.title,
