@@ -41,8 +41,26 @@
   transform: translateX(-25%) scale(1.025);
 }
 
+.pageNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1000px;
+  cursor: pointer;
 
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.pageNumberCurrent {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  transition: all 0.3s;
+}
 
 
 

@@ -1,20 +1,35 @@
+import { useState, useEffect } from 'react';
+
 import styles from './PostsPagination.module.css';
-
-import PageNumber from './PageNumber/PageNumber';
-
-// import { ReactComponent as ArrowLeft } from "../../assets/icons/arrow_left.png";
-// import { ReactComponent as ArrowRight } from "../../assets/icons/arrow_right.png";
 
 import arrowLeft from "../../assets/icons/arrow_left.png";
 import arrowRight from "../../assets/icons/arrow_right.png";
 
 
-function PostsPagination({ pages, currentPosition, changePagination }) {
+function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }) {
 
   const onClickHandler = function(event) {
-    const side = event.target.dataset.side;
-    changePagination(side);
+    const sideOrNumber = event.target?.dataset.side || event;
+    postsPaginationHandler(sideOrNumber);
   };
+
+  const [foobar, setFoobar] = useState(4);
+
+  
+  useEffect(() => {
+
+    if ((currentPostsPosition + 1) % 5 === 0) {
+      setFoobar(previousState => {
+        if (currentPostsPosition >= previousState) return previousState + 5;
+        if (currentPostsPosition <= previousState) return previousState - 5;
+      });
+    };
+
+    // Parei aqui, falta achar lógica pra ele voltar quando chegamos em 5 e voltamos
+    console.log(currentPostsPosition + 1);
+
+  }, [currentPostsPosition]);
+
 
   return (
     <div className={styles.postsNav}>
@@ -30,14 +45,24 @@ function PostsPagination({ pages, currentPosition, changePagination }) {
 
       {pages.map((_, index) => {
         return (
-          <PageNumber
-            key={Math.random()}
-            currentPosition={currentPosition}
-            index={index}
-            pagesLength={pages.length}
-          />
+        // Lógica p/ paginação na página ocorrer de 5 em 5 posições
+          index <= foobar && index >= foobar - 5 &&
+            <div
+              className={`${styles.pageNumber} ${index === currentPostsPosition && styles.pageNumberCurrent}`}
+              onClick={() => onClickHandler(index)}
+              key={index}
+            >
+              {index + 1}
+            </div>
         )
       })}
+
+      <div className={styles.pageNumber}>...</div>
+
+      <div
+        className={styles.pageNumber}
+        onClick={() => onClickHandler(pages.length - 1)}
+      >{pages.length}</div>
 
       <div className={styles.arrowContainer}> 
         {<img

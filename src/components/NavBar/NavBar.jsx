@@ -6,16 +6,22 @@ function NavBar() {
       <h1 className={styles["nav__title"]}>hosana.dev/blog</h1>
 
       <nav className={styles.navbar}>
-        <li className={styles["navbar__item"]}>
-          Home
+        <li>
+          <a href="#" className={styles["navbar__item"]}>
+            Home
+          </a>
         </li>
 
-        <li className={styles["navbar__item"]}>
-          Github
+        <li>
+          <a href="https://github.com/diegodiego1989" target="_blank" className={styles["navbar__item"]}>
+            Github
+          </a>
         </li>
 
-        <li className={styles["navbar__item"]}>
-          Projects
+        <li>
+          <a href="https://hosana.dev/#works" target="_blank" className={styles["navbar__item"]}>
+            Projects
+          </a>
         </li>
       </nav>
 

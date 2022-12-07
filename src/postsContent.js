@@ -60,7 +60,7 @@ export const postsContent = [
       ],
       img: postImg1,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 24 2022",
       key: keyGen(),
     },
   
@@ -77,7 +77,7 @@ export const postsContent = [
       ],
       img: postImg2,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 23 2022",
       key: keyGen(),
     },
   
@@ -94,7 +94,7 @@ export const postsContent = [
       ],
       img: postImg3,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 22 2022",
       key: keyGen(),
     }
   ],
@@ -113,7 +113,7 @@ export const postsContent = [
       ],
       img: postImg4,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 21 2022",
       key: keyGen(),
     },
   
@@ -130,7 +130,7 @@ export const postsContent = [
       ],
       img: postImg5,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 20 2022",
       key: keyGen(),
     },
   
@@ -147,7 +147,7 @@ export const postsContent = [
       ],
       img: postImg6,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 19 2022",
       key: keyGen(),
     },
   ],
@@ -166,7 +166,7 @@ export const postsContent = [
       ],
       img: postImg7,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 18 2022",
       key: keyGen(),
     },
   
@@ -183,7 +183,7 @@ export const postsContent = [
       ],
       img: postImg8,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 17 2022",
       key: keyGen(),
     },
   
@@ -200,7 +200,7 @@ export const postsContent = [
       ],
       img: postImg9,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 16 2022",
       key: keyGen(),
     },
   ],
@@ -219,7 +219,7 @@ export const postsContent = [
       ],
       img: postImg10,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 15 2022",
       key: keyGen(),
     },
   
@@ -236,7 +236,7 @@ export const postsContent = [
       ],
       img: postImg11,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 14 2022",
       key: keyGen(),
     },
   
@@ -253,7 +253,7 @@ export const postsContent = [
       ],
       img: postImg12,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 13 2022",
       key: keyGen(),
     },
   ],
@@ -272,7 +272,7 @@ export const postsContent = [
       ],
       img: postImg13,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 12 2022",
       key: keyGen(),
     },
   
@@ -289,7 +289,7 @@ export const postsContent = [
       ],
       img: postImg14,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 11 2022",
       key: keyGen(),
     },
   
@@ -306,7 +306,7 @@ export const postsContent = [
       ],
       img: postImg15,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 10 2022",
       key: keyGen(),
     },
   ],
@@ -325,7 +325,7 @@ export const postsContent = [
       ],
       img: postImg16,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 9 2022",
       key: keyGen(),
     },
   
@@ -342,7 +342,7 @@ export const postsContent = [
       ],
       img: postImg17,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 8 2022",
       key: keyGen(),
     },
   
@@ -359,7 +359,7 @@ export const postsContent = [
       ],
       img: postImg18,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 7 2022",
       key: keyGen(),
     },
   ],
@@ -378,7 +378,7 @@ export const postsContent = [
       ],
       img: postImg19,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 6 2022",
       key: keyGen(),
     },
   
@@ -395,7 +395,7 @@ export const postsContent = [
       ],
       img: postImg20,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 5 2022",
       key: keyGen(),
     },
   
@@ -412,7 +412,7 @@ export const postsContent = [
       ],
       img: postImg21,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 4 2022",
       key: keyGen(),
     },
   ],
@@ -431,7 +431,7 @@ export const postsContent = [
       ],
       img: postImg22,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 3 2022",
       key: keyGen(),
     },
   
@@ -448,7 +448,7 @@ export const postsContent = [
       ],
       img: postImg23,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 2 2022",
       key: keyGen(),
     },
   
@@ -465,7 +465,60 @@ export const postsContent = [
       ],
       img: postImg24,
       author: "Diego Rocha",
-      date: "November 11st 2022",
+      date: "November 1 2022",
+      key: keyGen(),
+    },
+  ],
+
+  [
+    {
+      title: "The basic language of the web: HTML",
+      paragraphs: [
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, debitis dicta, atque, doloribus sapiente culpa est tempore quidem sequi cupiditate rem! Laboriosam adipisci sunt aspernatur temporibus. Fugiat veniam a repellendus.",
+        
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, corporis. Doloremque eum similique sint reprehenderit quis explicabo tempore. Doloremque quos odio dolor in repellendus illum, quidem rem alias quasi ipsum.",
+      ],
+      img: postImg22,
+      author: "Diego Rocha",
+      date: "November 3 2022",
+      key: keyGen(),
+    },
+  
+    {
+      title: "The basic language of the web: HTML",
+      paragraphs: [
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, debitis dicta, atque, doloribus sapiente culpa est tempore quidem sequi cupiditate rem! Laboriosam adipisci sunt aspernatur temporibus. Fugiat veniam a repellendus.",
+
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, corporis. Doloremque eum similique sint reprehenderit quis explicabo tempore. Doloremque quos odio dolor in repellendus illum, quidem rem alias quasi ipsum.",
+      ],
+      img: postImg23,
+      author: "Diego Rocha",
+      date: "November 2 2022",
+      key: keyGen(),
+    },
+  
+    {
+      title: "The basic language of the web: HTML",
+      paragraphs: [
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, debitis dicta, atque, doloribus sapiente culpa est tempore quidem sequi cupiditate rem! Laboriosam adipisci sunt aspernatur temporibus. Fugiat veniam a repellendus.",
+        
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, corporis. Doloremque eum similique sint reprehenderit quis explicabo tempore. Doloremque quos odio dolor in repellendus illum, quidem rem alias quasi ipsum.",
+      ],
+      img: postImg24,
+      author: "Diego Rocha",
+      date: "November 1 2022",
       key: keyGen(),
     },
   ],

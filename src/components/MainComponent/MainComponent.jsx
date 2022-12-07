@@ -1,6 +1,7 @@
 import styles from './MainComponent.module.css';
 
 import { useState } from "react";
+// import { Routes, Router, Link } from "react-router-dom";
 
 import NavBar from "../NavBar/NavBar";
 import BlogPost from "../BlogPost/BlogPost";
@@ -16,13 +17,17 @@ function MainModule() {
 
   const [currentPostsPosition, setCurrentPostsPosition] = useState(0);
   
-  const postsNavHandler = function(side) {
+  const postsPaginationHandler = function(sideOrNumber) {
 
-    if (side === "right" && currentPostsPosition < postsContent.length - 1) {
+    if (typeof sideOrNumber === "number") {
+      setCurrentPostsPosition(sideOrNumber);
+    };
+
+    if (sideOrNumber === "right" && currentPostsPosition < postsContent.length - 1) {
       setCurrentPostsPosition((previousState) => previousState + 1);
     };
 
-    if (side === "left" && currentPostsPosition > 0) {
+    if (sideOrNumber === "left" && currentPostsPosition > 0) {
       setCurrentPostsPosition((previousState) => previousState - 1);
     };
 
@@ -41,9 +46,7 @@ function MainModule() {
   };
 
 
-
   return (
-
 
     <article className={styles.mainModule}>
 
@@ -52,7 +55,7 @@ function MainModule() {
 
       <div className={styles.flexContainer}>
         <div className={styles.postsContainer}>
-
+          
           {/***** POSTS *****/}
           {postsContent
             .at(currentPostsPosition)
@@ -65,11 +68,10 @@ function MainModule() {
 
                   {/* Render div line  before penultimate post */}
                   {index <= penultimatePost && <div className={styles.line}/>} 
-           
-              </div>
-            )
+          
+                </div>
+              )
           })}
-
         </div>
 
         {/***** RELATED POSTS *****/}
@@ -80,8 +82,8 @@ function MainModule() {
           {randomRelatedPosts().map(related => {
             return (
               <RelatedPost
-              key={related.key}
-              relatedPostData={related}
+                key={related.key}
+                relatedPostData={related}
               />
             )
           })}
@@ -93,9 +95,9 @@ function MainModule() {
       {/***** POSTS PAGINATION *****/}
       <PostsPagination
         pages={postsContent}
-        changePagination={postsNavHandler}
-        currentPosition={currentPostsPosition}
-        />
+        currentPostsPosition={currentPostsPosition}
+        postsPaginationHandler={postsPaginationHandler}
+      />
 
       {/***** FOOTER *****/}
       <Footer/>
