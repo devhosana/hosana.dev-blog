@@ -92,12 +92,15 @@ function MainModule() {
 
       </div>
 
-      {/***** POSTS PAGINATION *****/}
-      <PostsPagination
-        pages={postsContent}
-        currentPostsPosition={currentPostsPosition}
-        postsPaginationHandler={postsPaginationHandler}
-      />
+      <div className={styles.postsPaginationContainer}>
+        {/***** POSTS PAGINATION *****/}
+        <PostsPagination
+          pages={postsContent}
+          currentPostsPosition={currentPostsPosition}
+          postsPaginationHandler={postsPaginationHandler}
+        />
+
+      </div>
 
       {/***** FOOTER *****/}
       <Footer/>

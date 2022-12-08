@@ -1,10 +1,9 @@
 .postsNav {
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   
-  /* border: 2px solid red; */
-  padding: 4.8rem;
+  min-width: 35.5rem;
 }
 
 
@@ -64,6 +63,14 @@
   background-color: var(--color-primary);
   transition: all 0.3s;
 }
+
+.subContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 
