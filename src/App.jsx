@@ -12,7 +12,7 @@ function App() {
           backgroundColor: "yellow",
           width: "100%",
           position: "fixed",
-          top: "",
+          top: "0",
           left: "0",
           padding: "1.1rem",
           fontWeight: "700",

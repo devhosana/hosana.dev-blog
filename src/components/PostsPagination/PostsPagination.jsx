@@ -13,20 +13,26 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
     postsPaginationHandler(sideOrNumber);
   };
 
-  const [foobar, setFoobar] = useState(4);
+  const [pagesNavigationDivider, setPagesNavigationDivider] = useState(4);
 
   
   useEffect(() => {
 
     if ((currentPostsPosition + 1) % 5 === 0) {
-      setFoobar(previousState => {
-        if (currentPostsPosition >= previousState) return previousState + 5;
-        if (currentPostsPosition <= previousState) return previousState - 5;
+      setPagesNavigationDivider(previousDividerValue => {
+        if (currentPostsPosition >= previousDividerValue) return previousDividerValue + 5;
+        if (currentPostsPosition < previousDividerValue) return previousDividerValue - 5;
       });
-    };
-
+    } else {
+      // Provavelmente solução está encaixar logica no else aqui
+      console.log(currentPostsPosition % 5);
+      console.log(currentPostsPosition);
+    }; 
+    
     // Parei aqui, falta achar lógica pra ele voltar quando chegamos em 5 e voltamos
-    console.log(currentPostsPosition + 1);
+    // Ao fazermos F5 e clicarmos diretamente no último post (depois das reticencias também ocorre bug)
+    // tentar encaixar algum condicional com && no segundo if
+    // console.log(currentPostsPosition + 1);
 
   }, [currentPostsPosition]);
 
@@ -43,10 +49,17 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
         />}
       </div>
 
+      {/* <div
+        className={styles.pageNumber}
+        onClick={() => onClickHandler(0)}
+      >{pages.length + 1 - pages.length}</div>
+
+      <div className={styles.pageNumber}>...</div> */}
+
       {pages.map((_, index) => {
         return (
-        // Lógica p/ paginação na página ocorrer de 5 em 5 posições
-          index <= foobar && index >= foobar - 5 &&
+        // Lógica p/ divisão de paginação ocorrer de 5 em 5 posições
+          index <= pagesNavigationDivider && index >= pagesNavigationDivider - 5 &&
             <div
               className={`${styles.pageNumber} ${index === currentPostsPosition && styles.pageNumberCurrent}`}
               onClick={() => onClickHandler(index)}
