@@ -8,8 +8,6 @@ import arrowRight from "../../assets/icons/arrow_right.png";
 
 function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }) {
 
-  let multiplier = 0;
-
   const onClickHandler = function(event) {
     const sideOrNumber = event.target?.dataset.side || event;
     postsPaginationHandler(sideOrNumber);
@@ -19,11 +17,20 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
 
     let currPagPos = currentPaginationPosition;
 
-    while (currPagPos % 5 !== 0) {
-      currPagPos < 0 ? currPagPos-- : currPagPos ++;
-    };
+    // Somar ou subtrair uma unidade até obtermos próximo número que divida por 5 e não sobre nada
+    while (currPagPos % 5 !== 0) currPagPos < 0 ? currPagPos-- : currPagPos++;
 
-    return Math.abs(currPagPos);
+    if (currentPaginationPosition < 0) {
+      const lastPaginationPosition = Math.abs(currPagPos - 4);
+      return lastPaginationPosition;
+    };
+    
+    // Later (1)
+    if (currentPaginationPosition > 0) {
+      const firstPaginationPosition = Math.abs(currPagPos + 4);
+      return firstPaginationPosition;
+    };
+    
 
   };
 
@@ -34,25 +41,29 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
 
     const currentPaginationPosition = pagesNavigationDivider - currentPostsPosition;
     
+    // Quando o resultado desta subtração for negativo && maior que -6, indica que o usuário avançou na paginação 
+    // Então aumentaremos os números que serão exibidos em 5 posições de maneira a avançar 5 valores as páginas exibidas na linha 88
     if (currentPaginationPosition < 0 && currentPaginationPosition > -6) {
       setPagesNavigationDivider(previousState => previousState + 5);
-      console.log(pagesNavigationDivider);
     };
     
-    if (currentPaginationPosition >= 5) {
+    // Quando o resultado desta subtração for positivo && menor que 6 indica que o usuário retrocedeu na paginação
+    // Então
+    if (currentPaginationPosition >= 5 && currentPaginationPosition < 6) {
       setPagesNavigationDivider(previousState => previousState - 5);
     };
 
+
     if (-5 > currentPaginationPosition) {
-      const lastPaginationPosition = loopUntilRemainderEqualsZero(currentPaginationPosition) + 4;
+      const lastPaginationPosition = loopUntilRemainderEqualsZero(currentPaginationPosition);
       setPagesNavigationDivider(lastPaginationPosition);
     };
 
     /*
-    Later 1
+    Later (2)
     if (currentPaginationPosition > 5) {
-      const lastPaginationPosition = loopUntilRemainderEqualsZero(currentPaginationPosition) - 4;
-      setPagesNavigationDivider(lastPaginationPosition);
+      const firstPaginationPosition = loopUntilRemainderEqualsZero(currentPaginationPosition) - 4;
+      setPagesNavigationDivider(firstPaginationPosition);
     };
     */
     
@@ -73,13 +84,14 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
 
         
       {/*
-      Later 2
-      <div
-        className={styles.pageNumber}
-        onClick={() => onClickHandler(0)}
-      >{pages.length + 1 - pages.length}</div>
+        Later 2
+        <div
+          className={styles.pageNumber}
+          onClick={() => onClickHandler(0)}
+        >{pages.length + 1 - pages.length}</div>
 
-      <div className={styles.pageNumber}>...</div> */}
+        <div className={styles.pageNumber}>...</div>
+      */}
 
       {pages.map((_, index) => {
         return (
