@@ -14,8 +14,10 @@
   font-size: 1.6rem;
   margin-bottom: 0.7rem;
   color: var(--color-primary);
+  line-height: 1.3;
 }
 
 .relatedPostDate {
   font-size: 1.4rem;
 }
+

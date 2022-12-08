@@ -43,7 +43,7 @@ const randomNumFrom = function(array) {
   return num - 1;
 };
 
-
+// Para o título use no máximo 35 caracteres
 export const postsContent = [
 
   [

@@ -3,9 +3,14 @@
   justify-content:space-between;
   align-items: center;
   
-  min-width: 35.6rem;
+  min-width: 36.5rem;
 }
 
+.arrowContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .arrowRight,
 .arrowLeft {
@@ -33,11 +38,11 @@
 }
 
 .arrowRight:active {
-  transform: translateX(25%) scale(1.025);
+  transform: translateX(25%) scale(1);
 }
 
 .arrowLeft:active {
-  transform: translateX(-25%) scale(1.025);
+  transform: translateX(-25%) scale(1);
 }
 
 .pageNumber {

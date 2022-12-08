@@ -66,7 +66,7 @@ function MainModule() {
                     postData={content}
                   />
 
-                  {/* Render div line  before penultimate post */}
+                  {/* Render div line before penultimate post */}
                   {index <= penultimatePost && <div className={styles.line}/>} 
           
                 </div>

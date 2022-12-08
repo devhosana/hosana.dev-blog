@@ -26,10 +26,10 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
     };
     
     // Later (1)
-    if (currentPaginationPosition > 0) {
-      const firstPaginationPosition = Math.abs(currPagPos + 4);
-      return firstPaginationPosition;
-    };
+    // if (currentPaginationPosition > 0) {
+    //   const firstPaginationPosition = Math.abs(currPagPos + 4);
+    //   return firstPaginationPosition;
+    // };
 
   };
 

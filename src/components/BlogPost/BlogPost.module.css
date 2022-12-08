@@ -6,7 +6,8 @@
 .postTitle {
   color: var(--color-primary);
   font-size: 3rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.4;
 }
 
 .paragraph {
@@ -19,11 +20,21 @@
   padding: 1rem 0;
   width: 100%;
   height: 100%;
-
+  
 }
 
 .postAuthor {
   font-size: 2rem;
   text-align: right;
   margin-top: 4.8rem;
+  line-height: 1.4;
+}
+
+/* Abaixo de 600px */
+@media (max-width: 37.5em) {
+
+  .postAuthor {
+    text-align: center;
+  }
+  
 }

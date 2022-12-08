@@ -37,3 +37,28 @@
 .navbar__item:active {
   color: var(--color-primary);
 }
+
+/* Abaixo de 800px */
+@media (max-width: 50em) {
+
+  .nav__title {
+    font-size: 2.7rem;
+  }
+
+  .navbar__item {
+    font-size: 1.8rem;
+  }
+  
+}
+
+/* Abaixo de 634px */
+@media (max-width: 39.68em) {
+
+  .header__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+}
