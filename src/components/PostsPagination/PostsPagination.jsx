@@ -38,7 +38,7 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
   useEffect(() => {
     
     const currentPaginationPosition = pagesNavigationDivider - currentPostsPosition;
-    const navBar = document.querySelector("#nav__bar");
+    const top = document.querySelector("body");
     
     // Quando o resultado desta subtração for negativo && maior que -6, indica que o usuário avançou na paginação 
     // Então aumentaremos os números que serão exibidos em 5 posições de maneira a avançar 5 valores as páginas exibidas na linha 88
@@ -71,8 +71,9 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
     };
 
     // Debounding
+    // Parei aqui, adicionar threhold para compenar linha azul
     const goTo =
-      setTimeout(() => navBar.scrollIntoView( { behavior: "smooth" } ), 600)
+      setTimeout(() => top.scrollIntoView( { behavior: "smooth" } ), 600)
     ;
 
     return () => clearTimeout(goTo);
