@@ -9,24 +9,23 @@ import RelatedPost from '../RelatedPost/RelatedPost';
 import PostsPagination from "../PostsPagination/PostsPagination";
 import Footer from "../Footer/Footer";
 
-
 import { postsContent, randomRelatedPosts } from "../../postsContent.js";
 
 
 function MainModule() {
-
+  
   const [currentPostsPosition, setCurrentPostsPosition] = useState(0);
   
   const postsPaginationHandler = function(sideOrNumber) {
-
+    
     if (typeof sideOrNumber === "number") {
       setCurrentPostsPosition(sideOrNumber);
     };
-
+    
     if (sideOrNumber === "right" && currentPostsPosition < postsContent.length - 1) {
       setCurrentPostsPosition((previousState) => previousState + 1);
     };
-
+    
     if (sideOrNumber === "left" && currentPostsPosition > 0) {
       setCurrentPostsPosition((previousState) => previousState - 1);
     };

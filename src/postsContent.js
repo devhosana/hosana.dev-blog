@@ -50,7 +50,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -67,7 +67,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -84,7 +84,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -103,7 +103,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -120,7 +120,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -137,7 +137,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -156,7 +156,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -173,7 +173,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -190,7 +190,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -209,7 +209,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -226,7 +226,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -243,7 +243,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -262,7 +262,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -279,7 +279,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -296,7 +296,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -315,7 +315,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -332,7 +332,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -349,7 +349,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -368,7 +368,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -385,7 +385,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -402,7 +402,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -421,7 +421,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -438,7 +438,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
@@ -455,7 +455,7 @@ export const postsContent = [
     {
       title: "The basic language of the web: HTML",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
+        "This is a dummy text, lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sequi repellat non distinctio illo, neque vel earum officia nostrum ipsam officiis tempora vero molestiae ab iure facere repudiandae maxime numquam.",
         

@@ -34,11 +34,11 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
   };
 
   const [pagesNavigationDivider, setPagesNavigationDivider] = useState(4);
-
   
   useEffect(() => {
-
+    
     const currentPaginationPosition = pagesNavigationDivider - currentPostsPosition;
+    const navBar = document.querySelector("#nav__bar");
     
     // Quando o resultado desta subtração for negativo && maior que -6, indica que o usuário avançou na paginação 
     // Então aumentaremos os números que serão exibidos em 5 posições de maneira a avançar 5 valores as páginas exibidas na linha 88
@@ -52,13 +52,13 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
       setPagesNavigationDivider(previousState => previousState - 5);
     };
 
-
+    //
     if (-5 > currentPaginationPosition) {
       const lastPaginationPosition = loopUntilRemainderEqualsZero(currentPaginationPosition);
       setPagesNavigationDivider(lastPaginationPosition);
     };
     
-  
+    // 
     if (currentPaginationPosition > 5) {
       // Later (1)
       // console.log(currentPaginationPosition);
@@ -69,6 +69,13 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
       // ou ainda
       // setPagesNavigationDivider(4);
     };
+
+    // Debounding
+    const goTo =
+      setTimeout(() => navBar.scrollIntoView( { behavior: "smooth" } ), 600)
+    ;
+
+    return () => clearTimeout(goTo);
     
   }, [currentPostsPosition]);
   
@@ -78,14 +85,15 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
 
       <div className={styles.subContainer}>
 
-        <div className={styles.arrowContainer}>
+        <button className={styles.arrowContainer}>
           {<img
             src={arrowLeft}
             className={styles.arrowLeft}
             onClick={onClickHandler}
             data-side="left"
+            id = "post__image"
           />}
-        </div>
+        </button>
 
 
         {/*
@@ -138,14 +146,14 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
           >{pages.length}</div>}
         */}
 
-        <div className={styles.arrowContainer}> 
+        <button className={styles.arrowContainer}> 
           {<img
             src={arrowRight}
             className={styles.arrowRight}
             onClick={onClickHandler}
             data-side="right"
           />}
-        </div>
+        </button>
       </div>
 
     </div>

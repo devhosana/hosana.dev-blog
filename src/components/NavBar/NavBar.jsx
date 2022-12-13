@@ -2,7 +2,7 @@ import styles from './NavBar.module.css';
 
 function NavBar() {
   return (
-    <header className={styles["header__container"]}>
+    <header className={styles["header__container"]} id="nav__bar">
       <h1 className={styles["nav__title"]}>hosana.dev/blog</h1>
 
       <nav className={styles.navbar}>
