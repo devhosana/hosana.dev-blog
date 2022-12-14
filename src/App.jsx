@@ -20,7 +20,7 @@ function App() {
           letterSpacing: "0.75px",
           textTransform: "uppercase",
           fontSize: "1.6rem",
-          display: "none",
+          // display: "none",
         }}> Under development </div>
 
         <MainComponent/>

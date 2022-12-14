@@ -5,6 +5,7 @@ import styles from './PostsPagination.module.css';
 import arrowLeft from "../../assets/icons/arrow_left.png";
 import arrowRight from "../../assets/icons/arrow_right.png";
 
+let firstLoad = true;
 
 function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }) {
 
@@ -71,10 +72,10 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
     };
 
     // Debounding
-    // Parei aqui, adicionar threhold para compenar linha azul
-    const goTo =
-      setTimeout(() => top.scrollIntoView( { behavior: "smooth" } ), 600)
-    ;
+    const goTo = setTimeout(() => {
+       if (!firstLoad) top.scrollIntoView( { behavior: "smooth" } );
+       firstLoad = false;
+    }, 600);
 
     return () => clearTimeout(goTo);
     
