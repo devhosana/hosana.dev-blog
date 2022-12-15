@@ -5,36 +5,29 @@ import styles from './PostsPagination.module.css';
 import arrowLeft from "../../assets/icons/arrow_left.png";
 import arrowRight from "../../assets/icons/arrow_right.png";
 
+import arrowLastPosition from "../../assets/icons/arrow_last.png";
+import arrowFirstPosition from "../../assets/icons/arrow_first.png";
+
 let firstLoad = true;
 
-function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }) {
-
-  const onClickHandler = function(event) {
-    const sideOrNumber = event.target?.dataset.side || event;
-    postsPaginationHandler(sideOrNumber);
-  };
-
-  const loopUntilRemainderEqualsZero = function(currentPaginationPosition) {
-
-    let currPagPos = currentPaginationPosition;
-
-    // Somar ou subtrair uma unidade até obtermos próximo número que divida por 5 e não sobre nada
-    while (currPagPos % 5 !== 0) currPagPos < 0 ? currPagPos-- : currPagPos++;
-
-    if (currentPaginationPosition < 0) {
-      const lastPaginationPosition = Math.abs(currPagPos - 4);
-      return lastPaginationPosition;
-    };
-    
-    // Later (1)
-    // if (currentPaginationPosition > 0) {
-    //   const firstPaginationPosition = Math.abs(currPagPos + 4);
-    //   return firstPaginationPosition;
-    // };
-
-  };
+function PostsPagination({ postsContent, currentPostsPosition, postsPaginationHandler }) {
 
   const [pagesNavigationDivider, setPagesNavigationDivider] = useState(4);
+
+
+  const onClickHandler = function(position) {
+    postsPaginationHandler(position);
+  };
+
+  const getLastPaginationPosition = (postsLength) => {
+    let curLength = postsLength;
+    
+    while (curLength % 5 !== 0) curLength++;
+
+    return curLength - 1;
+  };
+
+  
   
   useEffect(() => {
     
@@ -47,35 +40,28 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
       setPagesNavigationDivider(previousState => previousState + 5);
     };
     
-    // Quando o resultado desta subtração for positivo && menor que 6 indica que o usuário retrocedeu na paginação
+    // Quando o resultado desta subtração for positivo && menor ou igual a 5 indica que o usuário retrocedeu na paginação
     // Então diminuiremos os números da paginação atual em 5 valores
     if (currentPaginationPosition >= 5 && currentPaginationPosition < 6) {
       setPagesNavigationDivider(previousState => previousState - 5);
     };
 
-    //
-    if (-5 > currentPaginationPosition) {
-      const lastPaginationPosition = loopUntilRemainderEqualsZero(currentPaginationPosition);
-      setPagesNavigationDivider(lastPaginationPosition);
+    // Quando currentPaginationPosition for menor que -5 indica que usuário quis avançar até o fim
+    if (currentPaginationPosition < -5) {
+      const lastPosition = getLastPaginationPosition(postsContent.length);
+      setPagesNavigationDivider(lastPosition);
     };
     
-    // 
+    // Quando currentPaginationPosts for maior que 5 indica que usuário quis voltar até o começo
     if (currentPaginationPosition > 5) {
-      // Later (1)
-      // console.log(currentPaginationPosition);
-
-      // const firstPaginationPosition = loopUntilRemainderEqualsZero(currentPaginationPosition) - 4;
-      // setPagesNavigationDivider(firstPaginationPosition);
-
-      // ou ainda
-      // setPagesNavigationDivider(4);
+      setPagesNavigationDivider(4);
     };
 
-    // Debounding
+    // Debounding na paginação
     const goTo = setTimeout(() => {
        if (!firstLoad) top.scrollIntoView( { behavior: "smooth" } );
        firstLoad = false;
-    }, 600);
+    }, 700);
 
     return () => clearTimeout(goTo);
     
@@ -84,36 +70,31 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
 
   return (
     <div className={styles.postsNav}>
+      
+      {/* Voltar */}
+      <button className={styles.arrowContainer}>
+        <img
+          src={arrowLeft}
+          className={styles.arrowLeft}
+          onClick={() => {
+            // Impedir que voltemos se estivermos no começo
+            if (currentPostsPosition === 0) return;
+            
+            onClickHandler(currentPostsPosition - 1);
+          }}
+          />
+      </button>
 
-      <div className={styles.subContainer}>
-
-        <button className={styles.arrowContainer}>
-          {<img
-            src={arrowLeft}
-            className={styles.arrowLeft}
-            onClick={onClickHandler}
-            data-side="left"
-            id = "post__image"
-          />}
-        </button>
-
-
-        {/*
-          // Later (2)
-
-          {
-            currentPostsPosition > 10 &&
-            <div
-              className={styles.pageNumber}
-              onClick={() => onClickHandler(0)}
-            >{1}</div>
-          }
-
-          {currentPostsPosition > 10 && <div className={styles.pageNumber}>...</div>}
-        */}
+      {/* Voltar */}
+      <div
+        className={styles.pageNumber}
+        onClick={() => onClickHandler(0)}>
+          {1}
+        </div>
+      <div className={styles.pageDots}>..</div>
 
 
-        {pages.map((_, index) => {
+        {postsContent.map((_, index) => {
           return (
             // Lógica p/ divisão de paginação ocorrer de 5 em 5 posições
             index <= pagesNavigationDivider && index > (pagesNavigationDivider - 5) &&
@@ -127,36 +108,31 @@ function PostsPagination({ pages, currentPostsPosition, postsPaginationHandler }
           )
         })}
 
-      </div>
+      
 
-      <div className={styles.subContainer}>
-        <div className={styles.pageNumber}>...</div>
-        <div
-          className={styles.pageNumber}
-          onClick={() => onClickHandler(pages.length - 1)}
+      <div className={styles.pageDots}>..</div>
 
-        >{pages.length}</div>
+      <div
+        className={styles.pageNumber}
+        onClick={() => onClickHandler(postsContent.length - 1)}
 
-        {/*
-          // Later (3)
+      >{postsContent.length}</div>
+
+
+      {/* Avançar */}
+      <button className={styles.arrowContainer}> 
+        <img
+          src={arrowRight}
+          className={styles.arrowRight}
+          onClick={() => {
+            // Impedir que avancemos se estivermos no fim
+            if (currentPostsPosition === postsContent.length - 1) return;
+
+            onClickHandler(currentPostsPosition + 1);
+          }}
           
-          {currentPostsPosition <= 10 && <div className={styles.pageNumber}>...</div>}
-          {currentPostsPosition <= 10 &&
-          <div
-            className={styles.pageNumber}
-            onClick={() => onClickHandler(pages.length - 1)}
-          >{pages.length}</div>}
-        */}
-
-        <button className={styles.arrowContainer}> 
-          {<img
-            src={arrowRight}
-            className={styles.arrowRight}
-            onClick={onClickHandler}
-            data-side="right"
-          />}
-        </button>
-      </div>
+        />
+      </button>
 
     </div>
   );

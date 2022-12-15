@@ -47,22 +47,33 @@
   transform: translateX(-25%) scale(1);
 }
 
-.pageNumber {
+.pageNumber,
+.pageDots {
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 3rem;
   height: 3rem;
-  padding: 1.4rem;
   margin: 0 0.6rem;
-
+  
   border-radius: 1000px;
   cursor: pointer;
-
+  
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-black);
+}
+
+.pageNumber {
+  padding: 1.4rem;
+  cursor: pointer;
+  margin: 0 0.6rem;
+}
+
+.pageDots {
+  padding: 0;
+  margin: 0;
 }
 
 .pageNumberCurrent {
@@ -77,6 +88,14 @@
   align-items: center;
 }
 
+/* Abaixo de 800px */
+@media (max-width: 50em) {
+
+  .pageNumber {
+    margin: 0 0.4rem;
+  }
+  
+}
 
 
 

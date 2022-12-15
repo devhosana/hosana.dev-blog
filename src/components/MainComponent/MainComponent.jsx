@@ -13,27 +13,19 @@ import { postsContent, randomRelatedPosts } from "../../postsContent.js";
 
 
 function MainModule() {
+
+  // const imageLoadHandler = (response) => {
+  //   return response;
+  // };
   
   const [currentPostsPosition, setCurrentPostsPosition] = useState(0);
-  
-  const postsPaginationHandler = function(sideOrNumber) {
-    
-    if (typeof sideOrNumber === "number") {
-      setCurrentPostsPosition(sideOrNumber);
-    };
-    
-    if (sideOrNumber === "right" && currentPostsPosition < postsContent.length - 1) {
-      setCurrentPostsPosition((previousState) => previousState + 1);
-    };
-    
-    if (sideOrNumber === "left" && currentPostsPosition > 0) {
-      setCurrentPostsPosition((previousState) => previousState - 1);
-    };
 
+  const postsPaginationHandler = function(position) {
+    setCurrentPostsPosition(position);
   };
 
 
-  // Assim não teremos line depois do último post.
+  // Assim não teremos line depois do último post, se houver somente um post não terevemos linha dividindo.
   let penultimatePost;
 
   if (postsContent.at(currentPostsPosition).length === 3) {
@@ -94,7 +86,7 @@ function MainModule() {
       <div className={styles.postsPaginationContainer}>
         {/***** POSTS PAGINATION *****/}
         <PostsPagination
-          pages={postsContent}
+          postsContent={postsContent}
           currentPostsPosition={currentPostsPosition}
           postsPaginationHandler={postsPaginationHandler}
         />

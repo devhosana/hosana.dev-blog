@@ -2,7 +2,7 @@ import styles from './BlogPost.module.css';
 
 function BlogPost(props) {
 
-  const { title, paragraphs, img, author, date } = props.postData; 
+  const { title, paragraphs, img, author, date } = props.postData;
 
   return (
     <div className={styles.postContainer}>
@@ -14,6 +14,7 @@ function BlogPost(props) {
             {text}
           </p>
 
+          {/* Inserir imagem somente depois de dois paragrafos */}
           {index === 1 &&
             <img
               src={img}
